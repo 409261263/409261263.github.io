@@ -1,56 +1,91 @@
-<link href="https://fonts.googleapis.com/css?family=Lobster" rel="stylesheet" type="text/css">
+
 <style> 
   h2 {
     font-family: monospace;
   }
   
   p{
-    font-size: 14px;
+    font-size: 21px;
     font-family: monospace;
   }
   
-  c{
-    font-size: 14px;
+  
+  .DarkBlue-text{
+    color: DarkBlue;
+  }
+  .size{
+    font-size: 18px;
     font-family: monospace;
   }
-  
-  .DimGray-text{
-    color: DimGray;
+  .box {
+    border-style: solid;
+    border-color: LightBlue;
+    border-width: 5px;
+    text-align: center;
+    padding:20px 40px 20px 40px;
   }
-  .DodgerBlue-text{
-    colot:DodgerBlue;  
+  .box2 {
+    border-style: solid;
+    border-color: LightBlue;
+    border-width: 5px;
+    text-align: center;
+    padding:10px 5px 10px 5px;
   }
+
+  body{
+     background:LightYellow;
+  }
+
+  .body2{
+     background:AliceBlue;
+  }
+
 </style>
-<h2 class ="DimGray-text">Harold website</h2>
+<h2 class ="DarkBlue-text box">Harold website</h2>
 <main>
-  <p>409261263 陳奕嘉個人網站 4</p>
+  <p class ="DarkBlue-text size ">409261263 陳奕嘉個人網站 5</p>
 
   <a href="#"><img src="https://i.imgur.com/iZbVy3Z.jpeg" alt="A cute orange cat lying on its back."></a>
 
-  <p class = "DodgerBlue">interest:</p>
-  <ul>
-    <li>music</li>
-    <li>basketball</li>
-    <li>piano</li>
+  <p class = "DarkBlue-text box">Interest:</p>
+  <ul class = "size">
+    <li class ="DarkBlue-text ">Music</li>
+    <li class ="DarkBlue-text ">Basketball</li>
+    <li class ="DarkBlue-text ">Piano</li>
+    <li class ="DarkBlue-text ">Guitar</li>
+    <li class ="DarkBlue-text ">Games</li>
   </ul>
-  <p class = "DodgerBlue">favourite food:</p>
-  <ul>
-    <li>hot pot</li>
-    <li>steak</li>
+  <p class = "DarkBlue-text box">Favourite food:</p>
+  <ul class = "size">
+    <li class ="DarkBlue-text ">Hot pot</li>
+    <li class ="DarkBlue-text ">Steak</li>
+    <li class ="DarkBlue-text ">Ramen</li>
+    <li class ="DarkBlue-text ">Teppanyaki</li>
   </ul>
   
   <form action="https://i.imgur.com/iZbVy3Z.jpeg" id="rabbit-form">
-  <p>How was your day today</p>
-    <label><input type="radio" name="good-bad" checked> Good</label>
+  <p class= "DarkBlue-text box" >How was your day today</p>
+    <label class = "size DarkBlue-text"><input type="radio" name="good-bad" checked> Good</label>
     <c> </c>
-    <label><input type="radio" name="good-bad"> Bad</label><br>
-    <p>What do you like</p>
-    <label><input type="checkbox" name="like" checked> wine</label>
+    <label class = "size DarkBlue-text"><input type="radio" name="good-bad"> Bad</label><br>
+    <p class= "DarkBlue-text box">What do you like</p>
+    <label class = "size DarkBlue-text"><input type="checkbox" name="like" checked> Wine</label>
     
-    <label><input type="checkbox" name="like"> beer</label>
+    <label class = "size DarkBlue-text"><input type="checkbox" name="like"> Beer</label>
     
-    <label><input type="checkbox" name="like"> Champagne</label><br>
-   
+    <label class = "size DarkBlue-text"><input type="checkbox" name="like"> Champagne</label>
+    <label class = "size DarkBlue-text"><input type="checkbox" name="like">Cocktail </label>
+
+    <label class = "size DarkBlue-text"><input type="checkbox" name="like"> Liqueur</label>
+  
+  <p class= "DarkBlue-text box" >What color is your favourite one?</p>
+  <select  class= " size box2 body2"  name="color" id="color" required>
+    <option style="color: red;" value="1">Red</option>
+    <option style="color: DarkBlue;" value="2">Blue</option>
+    <option style="color: Yellow;" value="3">Yellow</option>
+    <option style="color: brown;" value="4">Brown</option>
+    <option style="color: black;" value="5">Black</option>
+</select>
   </form>
   
 </main>
